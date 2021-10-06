@@ -1,0 +1,31 @@
+ void main(){
+   String user_name ="Mehedi Hasan";
+   Names  name = new Names();
+    print('Hello $user_name');
+   name.bike_drive();
+   name.car_drive();
+}
+class Names {
+  List bikes_name =['Yamaha R15','Honda CBR V3','Suzuki ZXR','KTM Duke'];
+  List cars_name =['Toyota','Ford','Audi','BMW','Mercedes Benz'];
+  void bike_drive(){
+    
+    print('\nYour Bike List : ');
+    for(var a in bikes_name){
+      print('$a');
+      if(a == bikes_name[3]){
+        print('This is Your Brand New Bike : $a');
+      }
+    }
+  }  
+  void car_drive(){  
+    print('\nYour Car List : ');
+    for(var a in cars_name){
+      print('$a');
+      if(a == cars_name[4]){
+        print('This is Your Brand New Car is : $a');
+      }
+    }  
+  }
+  
+}
